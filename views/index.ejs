@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Quoting Dojo</title>
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <link rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.css">
+        <script src="/bower_components/materialize/dist/js/materialize.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to QuotingDojo</h1>
+        <div class="row">
+            <form class="col s12" action="/process" method="post">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="name" type="text" name="name" value="">
+                        <label for="name">Your Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea" name="quote"></textarea>
+                        <label for="textarea1">Your quote</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input class="btn" type="submit" value="Add my quote">
+                        <a class="btn" href="/quotes">Skip to quotes</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
